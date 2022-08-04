@@ -1,0 +1,50 @@
+@import url("../libs/bootstrap.css");
+@import url("../libs/fontawesome-free-6.1.2-web/css/all.css");
+@import url("../libs/reset.css");
+@import url("../libs/material-design-iconic-font.min.css");
+@import url("../libs/material-icons.css");
+/* bottom--------------------------------------*/
+.bottom {
+  overflow: hidden;
+  background-color: #0d1e38;
+  padding: 50px 0;
+  max-width: 1920px;
+}
+.bottom .container {
+  border-top: 1px solid #163b66;
+  padding-top: 49px;
+  margin-top: -50px;
+}
+.bottom .container .tf-copyright .copyright {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  padding-left: 30px;
+}
+.bottom .container .tf-copyright .copyright p {
+  color: #9da4ac;
+}
+.bottom .container .tf-copyright .copyright a {
+  color: #9da4ac;
+}
+.bottom .container .tf-copyright .copyright a:hover {
+  color: #f98125;
+}
+.bottom .container .tf-button-chat .tf-button {
+  margin-left: 18px;
+}
+.bottom .container .tf-button-chat .tf-button .btn-effect {
+  font-size: 20px;
+  background-color: #f98125;
+  padding: 20px 30px;
+  border-radius: 15px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 32px;
+  transition: all 0.5s ease-in-out;
+}
+.bottom .container .tf-button-chat .tf-button .btn-effect:hover {
+  color: #f98125;
+  background-color: #fff;
+}/*# sourceMappingURL=bottom.css.map */

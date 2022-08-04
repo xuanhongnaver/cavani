@@ -1,0 +1,301 @@
+@import url("../libs/bootstrap.css");
+@import url("../libs/fontawesome-free-6.1.2-web/css/all.css");
+@import url("../libs/reset.css");
+@import url("../libs/icomoon.css");
+@import url("../libs/material-icons.css");
+@import url("../libs/material-design-iconic-font.min.css");
+/* Navbar
+-------------------------------------------------------------- */
+.header-inner {
+  max-width: 1920px;
+  position: relative;
+  z-index: 999;
+}
+.header-inner .logo {
+  margin-top: 26px;
+  padding: 0 70px 0 195px;
+  margin-bottom: 16px;
+}
+.header-inner .logo img {
+  max-width: 100%;
+  height: auto;
+  padding-right: 18px;
+}
+.header-inner .nav-wrap, .header-inner .logo {
+  float: left;
+}
+.header-inner .nav-wrap .btn-menu:before, .header-inner .logo .btn-menu:before {
+  content: "\e5d2";
+  transition: all 0.3s ease-out;
+}
+.header-inner .nav-wrap .btn-menu, .header-inner .logo .btn-menu {
+  float: right;
+  font-size: 32px;
+  color: #2bb0ef;
+  text-align: center;
+  width: 45px;
+  height: 73px;
+  text-align: center;
+  line-height: 73px;
+  cursor: pointer;
+  font-family: "Material Icons";
+  display: none;
+}
+.header-inner .nav-wrap .btn-menu.active:before, .header-inner .logo .btn-menu.active:before {
+  content: "\e5cd";
+}
+.header-inner .nav-wrap #mainnav ul li, .header-inner .logo #mainnav ul li {
+  position: relative;
+}
+.header-inner .nav-wrap #mainnav ul li a:hover, .header-inner .logo #mainnav ul li a:hover {
+  color: #f98125;
+}
+.header-inner .nav-wrap #mainnav ul li a, .header-inner .logo #mainnav ul li a {
+  font-size: 20px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  color: #202020;
+}
+.header-inner .nav-wrap #mainnav ul li a .btn-menu, .header-inner .logo #mainnav ul li a .btn-menu {
+  float: right;
+  font-size: 32px;
+  color: #2bb0ef;
+  text-align: center;
+  width: 45px;
+  height: 73px;
+  text-align: center;
+  line-height: 73px;
+  cursor: pointer;
+  font-family: "Material Icons";
+  display: none;
+}
+.header-inner .nav-wrap #mainnav ul li a .btn-menu:before, .header-inner .logo #mainnav ul li a .btn-menu:before {
+  content: "\e5d2";
+  transition: all 0.3s ease-out;
+}
+.header-inner .nav-wrap #mainnav ul li a .btn-menu.active:before, .header-inner .logo #mainnav ul li a .btn-menu.active:before {
+  content: "\e5cd";
+}
+.header-inner .nav-wrap #mainnav ul li a .menu, .header-inner .logo #mainnav ul li a .menu {
+  display: flex;
+}
+.header-inner .nav-wrap #mainnav ul li a .menu li, .header-inner .logo #mainnav ul li a .menu li {
+  padding: 0 45px 0 0px;
+  text-decoration: none;
+}
+.header-inner .nav-wrap #mainnav ul li a .menu li a, .header-inner .logo #mainnav ul li a .menu li a {
+  display: flex;
+  font-size: 20px;
+  color: #23233f;
+  font-weight: 400;
+  line-height: 30px;
+  align-items: center;
+}
+.header-inner .nav-wrap #mainnav ul li ul li, .header-inner .logo #mainnav ul li ul li {
+  padding: 10px 0 10px 15px;
+  border-top: 1px solid #f98125;
+}
+.header-inner .nav-wrap #mainnav ul li ul li:hover ul, .header-inner .logo #mainnav ul li ul li:hover ul {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, 0);
+}
+.header-inner .nav-wrap #mainnav ul > li > a, .header-inner .logo #mainnav ul > li > a {
+  text-decoration: none;
+  height: 55px;
+  line-height: 55px;
+  padding: 0 50px;
+  color: #fff;
+}
+.header-inner .nav-wrap #mainnav > ul > li, .header-inner .logo #mainnav > ul > li {
+  float: left;
+  padding: 35px 36px 32px 0px;
+  overflow: hidden;
+}
+.header-inner .nav-wrap #mainnav > ul > li > a:before, .header-inner .logo #mainnav > ul > li > a:before {
+  top: -100%;
+  width: 100%;
+  height: 2px;
+  background-color: #f98125;
+  content: "";
+  position: absolute;
+  left: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+.header-inner .nav-wrap #mainnav > ul > li > a:after, .header-inner .logo #mainnav > ul > li > a:after {
+  bottom: -100%;
+  width: 100%;
+  height: 2px;
+  background-color: #f98125;
+  content: "";
+  position: absolute;
+  left: 0;
+  margin-top: 30px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+.header-inner .nav-wrap #mainnav > ul > li > a, .header-inner .logo #mainnav > ul > li > a {
+  font-size: 20px;
+  display: inline-block;
+  position: relative;
+  line-height: 30px;
+  padding: 0 0px;
+}
+.header-inner .nav-wrap #mainnav > ul > li > ul, .header-inner .logo #mainnav > ul > li > ul {
+  width: 200px;
+  position: absolute;
+  z-index: 9999;
+  left: 0;
+  top: 100%;
+}
+.header-inner .nav-wrap #mainnav > ul > li > ul > li, .header-inner .logo #mainnav > ul > li > ul > li {
+  opacity: 0;
+  background-color: #fff;
+}
+.header-inner .nav-wrap #mainnav > ul > li > ul > li:first-child, .header-inner .logo #mainnav > ul > li > ul > li:first-child {
+  border-top: none;
+}
+.header-inner .nav-wrap #mainnav > ul > li:hover, .header-inner .logo #mainnav > ul > li:hover {
+  overflow: unset;
+  transition: all 0.5s ease;
+}
+.header-inner .nav-wrap #mainnav > ul > li:hover > a:before, .header-inner .logo #mainnav > ul > li:hover > a:before {
+  top: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #f98125;
+  content: "";
+  position: absolute;
+  left: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  opacity: 1;
+  filter: alpha(opacity=0);
+  transition: all 0.5s ease;
+  z-index: 999;
+}
+.header-inner .nav-wrap #mainnav > ul > li:hover > a, .header-inner .logo #mainnav > ul > li:hover > a {
+  color: #f98125;
+}
+.header-inner .nav-wrap #mainnav > ul > li:hover > a:after, .header-inner .logo #mainnav > ul > li:hover > a:after {
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #f98125;
+  content: "";
+  position: absolute;
+  left: 0;
+  margin-top: 30px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  opacity: 1;
+  filter: alpha(opacity=0);
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+.header-inner .nav-wrap #mainnav > ul > li:hover > .submenu, .header-inner .logo #mainnav > ul > li:hover > .submenu {
+  background-color: #fff;
+}
+.header-inner .nav-wrap #mainnav > ul > li:hover > .submenu > li, .header-inner .logo #mainnav > ul > li:hover > .submenu > li {
+  opacity: 1;
+}
+.header-inner .nav-wrap #mainnav > ul > li:hover > .submenu > li:hover, .header-inner .logo #mainnav > ul > li:hover > .submenu > li:hover {
+  padding-left: 25px;
+  transition: all 0.3s ease;
+}
+
+#mainnav-mobi {
+  margin-top: 90px;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #202020;
+  position: absolute;
+  z-index: 9999;
+  left: 0;
+}
+#mainnav-mobi ul {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#mainnav-mobi ul li {
+  margin: 0;
+  position: relative;
+  text-align: left;
+  border-top: 1px solid #252525;
+  cursor: pointer;
+}
+#mainnav-mobi ul li .btn-submenu {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 24px;
+  line-height: 60px;
+  text-align: center;
+  cursor: pointer;
+  width: 70px;
+  height: 44px;
+}
+#mainnav-mobi ul li .btn-submenu:before {
+  content: "\e5cf";
+  color: #fff;
+}
+#mainnav-mobi ul li .btn-submenu.active:before {
+  content: "\e5ce";
+}
+#mainnav-mobi ul.sub-menu {
+  top: 100%;
+  left: 0;
+  z-index: 2000;
+  position: relative;
+  background-color: #161625;
+}
+#mainnav-mobi ul.sub-menu > li > a {
+  display: block;
+  text-decoration: none;
+  padding: 0 60px;
+  border-top-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease-out;
+}
+#mainnav-mobi ul.sub-menu > lia:hover {
+  color: #fff;
+}
+#mainnav-mobi > ul > li > a {
+  text-decoration: none;
+  height: 55px;
+  line-height: 55px;
+  padding: 0 50px;
+  color: #fff;
+}
+#mainnav-mobi > ul > li > ul > li {
+  position: relative;
+  border-top: 1px solid #252525;
+  background-color: #222;
+}
+#mainnav-mobi > ul > li > ul > li > a {
+  padding-left: 70px !important;
+}
+#mainnav-mobi > ul > li > ul > li > ul > li {
+  position: relative;
+  border-top: 1px solid #252525;
+  background-color: #222;
+}
+#mainnav-mobi > ul > li > ul > li > ul > li > a {
+  padding-left: 90px !important;
+}
+#mainnav-mobi > ul > li > ul > li:first-child a {
+  border-top: none;
+}
+#mainnav-mobi > ul > li > ul > li.active > a {
+  color: #fff;
+}
+
+/* scroll--------------------------------------*//*# sourceMappingURL=navbar.css.map */

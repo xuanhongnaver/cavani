@@ -1,0 +1,86 @@
+/* Media Queries
+-------------------------------------------------------------- */
+/* Smaller than standard 1920 */
+@media only screen and (max-width: 1366px) {
+  .Portfolio .header .header-inner .logo {
+    padding: 0 0 0 5%;
+  }
+  .Portfolio .header .header-inner .nav-wrap {
+    float: left;
+  }
+  .Portfolio .home-page {
+    margin-left: 0px;
+  }
+  .Portfolio .home-page .bg-home {
+    width: 1542px;
+  }
+  .Portfolio .about .bg-about {
+    margin-left: -83px;
+  }
+  .Portfolio .tf-project .tf-swiper-project {
+    width: 1514px;
+  }
+  .Portfolio .tf-project .tf-swiper-project .tf-bg-page {
+    width: 1880px;
+  }
+  .header-sticky .header-inner .logo {
+    padding: 0 115px;
+    float: left;
+  }
+}
+/* Smaller than standard 1200 */
+@media only screen and (max-width: 1199px) {
+  .header-sticky .blog-posts .col-md-8 .post-wrap .entry .main-post .tf-category a {
+    padding-left: 0;
+  }
+  .header-sticky .blog-posts .col-md-8 .post-wrap .entry .main-post .entry-title a {
+    padding-left: 0;
+  }
+  .header-sticky .blog-posts .col-md-8 .post-wrap .entry .main-post .entry-content p {
+    padding-left: 0;
+  }
+  .header-sticky .blog-posts .col-md-8 .post-wrap .entry .main-post .entry-content .tf-archive {
+    padding-left: 0;
+  }
+  .header-sticky .blog-posts .col-md-8 .post-wrap .entry .main-post .entry-content .tf-archive .post-date {
+    padding-left: 305px;
+  }
+  .header-sticky .blog-posts .col-md-4 .sidebar {
+    margin-left: 0;
+  }
+  .header-sticky .blog-posts .col-md-4 .sidebar .side-post .thumb {
+    display: none;
+  }
+  .header-sticky .footer .footer-widgets .tf-phone .widget {
+    padding-left: 0;
+  }
+  .header-sticky .footer .footer-widgets .tf-phone .widget .widget-phone p {
+    font-size: 25px;
+  }
+  .header-sticky .footer .footer-widgets .tf-mail {
+    padding-left: 0;
+  }
+  .header-sticky .footer .footer-widgets .tf-mail .widget .widget-mail p {
+    font-size: 25px;
+  }
+  .header-sticky .bottom .tf-button-chat .tf-button {
+    margin-left: 0;
+  }
+  .header-sticky .bottom .tf-button-chat .tf-button .btn-effect {
+    padding: 20px 20px;
+  }
+}
+/* Smaller than standard 992 */
+@media only screen and (max-width: 991px) {
+  .header-sticky .header-inner .logo {
+    float: left;
+    padding: 0 50px;
+  }
+  .header-sticky .header-inner .nav-wrap {
+    float: right;
+    padding: 0 50px;
+  }
+  .header-sticky .header-inner .nav-wrap .btn-menu {
+    display: block;
+  }
+}/*# sourceMappingURL=responsive.css.map */

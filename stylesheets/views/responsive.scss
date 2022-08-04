@@ -1,0 +1,178 @@
+/* Media Queries
+-------------------------------------------------------------- */
+/* Smaller than standard 1920 */
+@media only screen and (max-width: 1919px) {
+    // .Portfolio{
+    //     .home-page{
+    //         margin-left: 0;
+    //     }
+    // }
+}
+
+@media only screen and (max-width: 1366px) {
+    .Portfolio {
+        .header {
+            .header-inner {
+                .logo {
+                    padding: 0 0 0 5%;
+                }
+
+                .nav-wrap {
+                    float: left;
+                }
+            }
+        }
+
+        .home-page {
+            margin-left: 0px;
+
+            .bg-home {
+                width: 1542px;
+            }
+        }
+
+        .about {
+            .bg-about {
+                margin-left: -83px;
+            }
+        }
+
+        .tf-project {
+            .tf-swiper-project {
+                width: 1514px;
+
+                .tf-bg-page {
+                    width: 1880px;
+                }
+            }
+        }
+    }
+
+    .header-sticky {
+        .header-inner {
+            .logo {
+                padding: 0 115px;
+                float: left;
+            }
+        }
+    }
+}
+
+/* Smaller than standard 1200 */
+@media only screen and (max-width: 1199px) {
+    .header-sticky {
+        .blog-posts {
+            .col-md-8 {
+                .post-wrap {
+                    .entry {
+                        .main-post {
+                            .tf-category {
+                                a {
+                                    padding-left: 0;
+                                }
+                            }
+
+                            .entry-title {
+                                a {
+                                    padding-left: 0;
+                                }
+                            }
+
+                            .entry-content {
+                                p {
+                                    padding-left: 0;
+                                }
+
+                                .tf-archive {
+                                    padding-left: 0;
+
+                                    .post-date {
+                                        padding-left: 305px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .col-md-4 {
+                .sidebar {
+                    margin-left: 0;
+
+                    .side-post {
+                        .thumb {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer {
+            .footer-widgets {
+                .tf-phone {
+                    .widget {
+                        padding-left: 0;
+
+                        .widget-phone {
+                            p {
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                }
+
+                .tf-mail {
+                    padding-left: 0;
+
+                    .widget {
+                        .widget-mail {
+                            p {
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            .tf-button-chat {
+                .tf-button {
+                    margin-left: 0;
+
+                    .btn-effect {
+                        padding: 20px 20px;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+/* Smaller than standard 992 */
+@media only screen and (max-width: 991px) {
+    .header-sticky {
+        .header-inner {
+            .logo {
+                float: left;
+                padding: 0 50px;
+            }
+
+            .nav-wrap {
+
+                float: right;
+                padding: 0 50px;
+
+                .btn-menu {
+                    display: block;
+                }
+            }
+        }
+
+
+    }
+}
